@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BA7935EA-60C1-488D-9E68-E3B69060B43A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9B04663-8399-45D3-9CC9-265AE756E638"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyIPTests/FindMyIPTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "test_API_Failure()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9B04663-8399-45D3-9CC9-265AE756E638 - 35ee58d2400dfb73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Alamofire.AFError&gt;) -&gt; () in FindMyIPTests.FindMyIPTests.test_API_Failure() -&gt; ()"
+                  moduleName = "FindMyIPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ail088/Projects/SwiftUI/FindMyIP/FindMyIPTests/FindMyIPTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "E9B04663-8399-45D3-9CC9-265AE756E638 - 35ee58d2400dfb73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Alamofire.AFError&gt;) -&gt; () in FindMyIPTests.FindMyIPTests.test_API_Failure() -&gt; ()"
+                  moduleName = "FindMyIPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ail088/Projects/SwiftUI/FindMyIP/FindMyIPTests/FindMyIPTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "448">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

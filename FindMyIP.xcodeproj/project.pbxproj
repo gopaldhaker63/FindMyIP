@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB2251A72B8053F200BE27ED /* MockFindMyIPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2251A62B8053F200BE27ED /* MockFindMyIPService.swift */; };
+		CB6C5BA02B7FBF1200428AFA /* FindMyIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5B9F2B7FBF1200428AFA /* FindMyIPApp.swift */; };
+		CB6C5BA22B7FBF1200428AFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BA12B7FBF1200428AFA /* ContentView.swift */; };
+		CB6C5BA42B7FBF1300428AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6C5BA32B7FBF1300428AFA /* Assets.xcassets */; };
+		CB6C5BA72B7FBF1300428AFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6C5BA62B7FBF1300428AFA /* Preview Assets.xcassets */; };
+		CB6C5BB12B7FBF1300428AFA /* FindMyIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BB02B7FBF1300428AFA /* FindMyIPTests.swift */; };
+		CB6C5BBB2B7FBF1300428AFA /* FindMyIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BBA2B7FBF1300428AFA /* FindMyIPUITests.swift */; };
+		CB6C5BBD2B7FBF1300428AFA /* FindMyIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BBC2B7FBF1300428AFA /* FindMyIPUITestsLaunchTests.swift */; };
+		CB6C5BCB2B7FC03000428AFA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CB6C5BCA2B7FC03000428AFA /* Alamofire */; };
+		CB6C5BD02B7FC1A900428AFA /* FindMyIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BCF2B7FC1A900428AFA /* FindMyIPView.swift */; };
+		CB6C5BD22B7FC1C700428AFA /* FindMyIPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BD12B7FC1C700428AFA /* FindMyIPViewModel.swift */; };
+		CB6C5BD42B7FC1E100428AFA /* FindMyIPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BD32B7FC1E100428AFA /* FindMyIPModel.swift */; };
+		CB6C5BD72B7FC25C00428AFA /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C5BD62B7FC25C00428AFA /* APIServices.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB6C5BAD2B7FBF1300428AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6C5B942B7FBF1200428AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6C5B9B2B7FBF1200428AFA;
+			remoteInfo = FindMyIP;
+		};
+		CB6C5BB72B7FBF1300428AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6C5B942B7FBF1200428AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6C5B9B2B7FBF1200428AFA;
+			remoteInfo = FindMyIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB2251A62B8053F200BE27ED /* MockFindMyIPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFindMyIPService.swift; sourceTree = "<group>"; };
+		CB6C5B9C2B7FBF1200428AFA /* FindMyIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6C5B9F2B7FBF1200428AFA /* FindMyIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPApp.swift; sourceTree = "<group>"; };
+		CB6C5BA12B7FBF1200428AFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB6C5BA32B7FBF1300428AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6C5BA62B7FBF1300428AFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB6C5BAC2B7FBF1300428AFA /* FindMyIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6C5BB02B7FBF1300428AFA /* FindMyIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPTests.swift; sourceTree = "<group>"; };
+		CB6C5BB62B7FBF1300428AFA /* FindMyIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6C5BBA2B7FBF1300428AFA /* FindMyIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPUITests.swift; sourceTree = "<group>"; };
+		CB6C5BBC2B7FBF1300428AFA /* FindMyIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB6C5BCF2B7FC1A900428AFA /* FindMyIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPView.swift; sourceTree = "<group>"; };
+		CB6C5BD12B7FC1C700428AFA /* FindMyIPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPViewModel.swift; sourceTree = "<group>"; };
+		CB6C5BD32B7FC1E100428AFA /* FindMyIPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPModel.swift; sourceTree = "<group>"; };
+		CB6C5BD62B7FC25C00428AFA /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB6C5B992B7FBF1200428AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6C5BCB2B7FC03000428AFA /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C5BA92B7FBF1300428AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C5BB32B7FBF1300428AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB6C5B932B7FBF1200428AFA = {
+			isa = PBXGroup;
+			children = (
+				CB6C5B9E2B7FBF1200428AFA /* FindMyIP */,
+				CB6C5BAF2B7FBF1300428AFA /* FindMyIPTests */,
+				CB6C5BB92B7FBF1300428AFA /* FindMyIPUITests */,
+				CB6C5B9D2B7FBF1200428AFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB6C5B9D2B7FBF1200428AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5B9C2B7FBF1200428AFA /* FindMyIP.app */,
+				CB6C5BAC2B7FBF1300428AFA /* FindMyIPTests.xctest */,
+				CB6C5BB62B7FBF1300428AFA /* FindMyIPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB6C5B9E2B7FBF1200428AFA /* FindMyIP */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BD52B7FC23900428AFA /* APIServices */,
+				CB6C5BCE2B7FC17000428AFA /* ViewModel */,
+				CB6C5BCD2B7FC16600428AFA /* Views */,
+				CB6C5BCC2B7FC15700428AFA /* Model */,
+				CB6C5B9F2B7FBF1200428AFA /* FindMyIPApp.swift */,
+				CB6C5BA12B7FBF1200428AFA /* ContentView.swift */,
+				CB6C5BA32B7FBF1300428AFA /* Assets.xcassets */,
+				CB6C5BA52B7FBF1300428AFA /* Preview Content */,
+			);
+			path = FindMyIP;
+			sourceTree = "<group>";
+		};
+		CB6C5BA52B7FBF1300428AFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BA62B7FBF1300428AFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB6C5BAF2B7FBF1300428AFA /* FindMyIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BB02B7FBF1300428AFA /* FindMyIPTests.swift */,
+				CB2251A62B8053F200BE27ED /* MockFindMyIPService.swift */,
+			);
+			path = FindMyIPTests;
+			sourceTree = "<group>";
+		};
+		CB6C5BB92B7FBF1300428AFA /* FindMyIPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BBA2B7FBF1300428AFA /* FindMyIPUITests.swift */,
+				CB6C5BBC2B7FBF1300428AFA /* FindMyIPUITestsLaunchTests.swift */,
+			);
+			path = FindMyIPUITests;
+			sourceTree = "<group>";
+		};
+		CB6C5BCC2B7FC15700428AFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BD32B7FC1E100428AFA /* FindMyIPModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB6C5BCD2B7FC16600428AFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BCF2B7FC1A900428AFA /* FindMyIPView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB6C5BCE2B7FC17000428AFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BD12B7FC1C700428AFA /* FindMyIPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB6C5BD52B7FC23900428AFA /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C5BD62B7FC25C00428AFA /* APIServices.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB6C5B9B2B7FBF1200428AFA /* FindMyIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6C5BC02B7FBF1300428AFA /* Build configuration list for PBXNativeTarget "FindMyIP" */;
+			buildPhases = (
+				CB6C5B982B7FBF1200428AFA /* Sources */,
+				CB6C5B992B7FBF1200428AFA /* Frameworks */,
+				CB6C5B9A2B7FBF1200428AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyIP;
+			packageProductDependencies = (
+				CB6C5BCA2B7FC03000428AFA /* Alamofire */,
+			);
+			productName = FindMyIP;
+			productReference = CB6C5B9C2B7FBF1200428AFA /* FindMyIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB6C5BAB2B7FBF1300428AFA /* FindMyIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6C5BC32B7FBF1300428AFA /* Build configuration list for PBXNativeTarget "FindMyIPTests" */;
+			buildPhases = (
+				CB6C5BA82B7FBF1300428AFA /* Sources */,
+				CB6C5BA92B7FBF1300428AFA /* Frameworks */,
+				CB6C5BAA2B7FBF1300428AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6C5BAE2B7FBF1300428AFA /* PBXTargetDependency */,
+			);
+			name = FindMyIPTests;
+			productName = FindMyIPTests;
+			productReference = CB6C5BAC2B7FBF1300428AFA /* FindMyIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB6C5BB52B7FBF1300428AFA /* FindMyIPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6C5BC62B7FBF1300428AFA /* Build configuration list for PBXNativeTarget "FindMyIPUITests" */;
+			buildPhases = (
+				CB6C5BB22B7FBF1300428AFA /* Sources */,
+				CB6C5BB32B7FBF1300428AFA /* Frameworks */,
+				CB6C5BB42B7FBF1300428AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6C5BB82B7FBF1300428AFA /* PBXTargetDependency */,
+			);
+			name = FindMyIPUITests;
+			productName = FindMyIPUITests;
+			productReference = CB6C5BB62B7FBF1300428AFA /* FindMyIPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB6C5B942B7FBF1200428AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CB6C5B9B2B7FBF1200428AFA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CB6C5BAB2B7FBF1300428AFA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CB6C5B9B2B7FBF1200428AFA;
+					};
+					CB6C5BB52B7FBF1300428AFA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = CB6C5B9B2B7FBF1200428AFA;
+					};
+				};
+			};
+			buildConfigurationList = CB6C5B972B7FBF1200428AFA /* Build configuration list for PBXProject "FindMyIP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB6C5B932B7FBF1200428AFA;
+			packageReferences = (
+				CB6C5BC92B7FC03000428AFA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = CB6C5B9D2B7FBF1200428AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB6C5B9B2B7FBF1200428AFA /* FindMyIP */,
+				CB6C5BAB2B7FBF1300428AFA /* FindMyIPTests */,
+				CB6C5BB52B7FBF1300428AFA /* FindMyIPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB6C5B9A2B7FBF1200428AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6C5BA72B7FBF1300428AFA /* Preview Assets.xcassets in Resources */,
+				CB6C5BA42B7FBF1300428AFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C5BAA2B7FBF1300428AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C5BB42B7FBF1300428AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB6C5B982B7FBF1200428AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6C5BA22B7FBF1200428AFA /* ContentView.swift in Sources */,
+				CB6C5BD02B7FC1A900428AFA /* FindMyIPView.swift in Sources */,
+				CB6C5BD72B7FC25C00428AFA /* APIServices.swift in Sources */,
+				CB6C5BD42B7FC1E100428AFA /* FindMyIPModel.swift in Sources */,
+				CB6C5BD22B7FC1C700428AFA /* FindMyIPViewModel.swift in Sources */,
+				CB6C5BA02B7FBF1200428AFA /* FindMyIPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C5BA82B7FBF1300428AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6C5BB12B7FBF1300428AFA /* FindMyIPTests.swift in Sources */,
+				CB2251A72B8053F200BE27ED /* MockFindMyIPService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6C5BB22B7FBF1300428AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6C5BBD2B7FBF1300428AFA /* FindMyIPUITestsLaunchTests.swift in Sources */,
+				CB6C5BBB2B7FBF1300428AFA /* FindMyIPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB6C5BAE2B7FBF1300428AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6C5B9B2B7FBF1200428AFA /* FindMyIP */;
+			targetProxy = CB6C5BAD2B7FBF1300428AFA /* PBXContainerItemProxy */;
+		};
+		CB6C5BB82B7FBF1300428AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6C5B9B2B7FBF1200428AFA /* FindMyIP */;
+			targetProxy = CB6C5BB72B7FBF1300428AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB6C5BBE2B7FBF1300428AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB6C5BBF2B7FBF1300428AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6C5BC12B7FBF1300428AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FindMyIP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.FindMyIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB6C5BC22B7FBF1300428AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FindMyIP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.FindMyIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB6C5BC42B7FBF1300428AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.FindMyIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyIP";
+			};
+			name = Debug;
+		};
+		CB6C5BC52B7FBF1300428AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.FindMyIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyIP";
+			};
+			name = Release;
+		};
+		CB6C5BC72B7FBF1300428AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.FindMyIPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyIP;
+			};
+			name = Debug;
+		};
+		CB6C5BC82B7FBF1300428AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.FindMyIPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyIP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB6C5B972B7FBF1200428AFA /* Build configuration list for PBXProject "FindMyIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6C5BBE2B7FBF1300428AFA /* Debug */,
+				CB6C5BBF2B7FBF1300428AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6C5BC02B7FBF1300428AFA /* Build configuration list for PBXNativeTarget "FindMyIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6C5BC12B7FBF1300428AFA /* Debug */,
+				CB6C5BC22B7FBF1300428AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6C5BC32B7FBF1300428AFA /* Build configuration list for PBXNativeTarget "FindMyIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6C5BC42B7FBF1300428AFA /* Debug */,
+				CB6C5BC52B7FBF1300428AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6C5BC62B7FBF1300428AFA /* Build configuration list for PBXNativeTarget "FindMyIPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6C5BC72B7FBF1300428AFA /* Debug */,
+				CB6C5BC82B7FBF1300428AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB6C5BC92B7FC03000428AFA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB6C5BCA2B7FC03000428AFA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6C5BC92B7FC03000428AFA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB6C5B942B7FBF1200428AFA /* Project object */;
+}
