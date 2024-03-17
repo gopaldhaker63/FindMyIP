@@ -7,6 +7,7 @@ enum DemoError: Error {
     case NoData
     case DecodingError
 }
+
 protocol FindMyIPDataProvider{
     func findMyIP() -> AnyPublisher<FindMyIPModel, AFError>
 }

@@ -3,6 +3,7 @@ import SwiftUI
 struct FindMyIPView: View {
     @ObservedObject var viewModel = FindMyIPViewModel()
     var body: some View {
+        
             VStack{
                 if viewModel.isLoading{
                     ProgressView()
